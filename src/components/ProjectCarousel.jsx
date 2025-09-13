@@ -8,24 +8,9 @@ export default function ProjectCarousel() {
   const intervalRef = useRef(null);
 
   const projects = [
-    {
-      title: "Architecture Project",
-      tagline: "We do big things with big ideas.",
-      image:
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1170&q=80",
-    },
-    {
-      title: "Restaurant Project",
-      tagline: "WE SERVE FOOD BUT WITH A PURPOSE.",
-      image:
-        "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1170&q=80",
-    },
-    {
-      title: "General Business",
-      tagline: "Building brands that matter.",
-      image:
-        "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1171&q=80",
-    },
+    { title: "Architecture Project", tagline: "We do big things with big ideas.", color: "bg-blue-200" },
+    { title: "Restaurant Project", tagline: "WE SERVE FOOD BUT WITH A PURPOSE.", color: "bg-red-200" },
+    { title: "General Business", tagline: "Building brands that matter.", color: "bg-green-200" },
   ];
 
   const goToNext = () => {
@@ -61,7 +46,6 @@ export default function ProjectCarousel() {
     };
   }, []);
 
-  // keep ref in sync with state
   useEffect(() => {
     isPausedRef.current = isPaused;
   }, [isPaused]);
@@ -87,12 +71,9 @@ export default function ProjectCarousel() {
           >
             {projects.map((project, index) => (
               <div key={index} className="w-full flex-shrink-0 relative">
-                <div className="relative h-96 md:h-[500px] overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                  />
+                <div
+                  className={`relative h-96 md:h-[500px] overflow-hidden flex items-center justify-center ${project.color}`}
+                >
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
                   {/* Text + Button Overlay */}
