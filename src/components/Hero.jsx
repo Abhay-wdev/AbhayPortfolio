@@ -58,7 +58,7 @@ export default function Hero() {
             variants={childVariants}
             className="mx-auto lg:mx-0 flex items-center gap-3 bg-green-600 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-green-700 transition-all duration-300"
           >
-            GETTING STARTED
+            Resume
             <ArrowRight className="w-5 h-5" />
           </motion.button>
         </motion.div>

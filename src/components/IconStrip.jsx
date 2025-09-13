@@ -9,22 +9,23 @@ import {
   FaPhp,
   FaPython,
 } from "react-icons/fa";
-import { SiJavascript, SiMongodb, SiMysql, SiNextdotjs } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiJavascript, SiMongodb,SiMongoose, SiMysql, SiNextdotjs,SiExpress  } from "react-icons/si";
 
 const frontendIcons = [
   { id: 1, icon: <FaHtml5 className="text-orange-600 w-10 h-10" />, label: "HTML" },
-  { id: 2, icon: <FaCss3Alt className="text-blue-600 w-10 h-10" />, label: "CSS" },
+  { id: 2, icon: <RiTailwindCssFill className="text-blue-600 w-10 h-10" />, label: "Tailwind CSS" },
   { id: 3, icon: <SiJavascript className="text-yellow-500 w-10 h-10" />, label: "JavaScript" },
   { id: 4, icon: <FaReact className="text-cyan-500 w-10 h-10" />, label: "React" },
-  { id: 5, icon: <SiNextdotjs className="text-black dark:text-white w-10 h-10" />, label: "Next.js" },
+  { id: 5, icon: <SiNextdotjs className="text-black   w-10 h-10" />, label: "Next.js" },
 ];
 
 const backendIcons = [
   { id: 6, icon: <FaNodeJs className="text-green-600 w-10 h-10" />, label: "Node.js" },
   { id: 7, icon: <SiMongodb className="text-green-700 w-10 h-10" />, label: "MongoDB" },
-  { id: 8, icon: <SiMysql className="text-blue-800 w-10 h-10" />, label: "MySQL" },
-  { id: 9, icon: <FaPhp className="text-indigo-600 w-10 h-10" />, label: "PHP" },
-  { id: 10, icon: <FaPython className="text-yellow-400 w-10 h-10" />, label: "Python" },
+  { id: 8, icon: <SiExpress className="text-blue-800 w-10 h-10" />, label: "Express" },
+  { id: 9, icon: <SiMongoose className="text-indigo-600 w-10 h-10" />, label: "Mongoose" },
+   
 ];
 
 // Slide in effect

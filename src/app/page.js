@@ -4,6 +4,7 @@ import Blogs from "@/components/Blogs";
 import Hero from "@/components/Hero";
 import ImageCard from "@/components/ImageCard";
 import ProjectCarousel from "@/components/ProjectCarousel";
+import Footer from "@/components/Footer";
   
 import Contact from "@/components/Contact";
  
@@ -12,11 +13,12 @@ export default function Home() {
   return (
     <div className="min-h-[500vh] ">
     <Hero/>
-    <ProjectCarousel/>
-    <Blogs/>
-    <AboutSection/>
-    <Contact/>
+    {/* <ProjectCarousel/> */}
    
+    <AboutSection/>
+     <Blogs/>
+    <Contact/>
+   <Footer/>
 
     </div>
   )

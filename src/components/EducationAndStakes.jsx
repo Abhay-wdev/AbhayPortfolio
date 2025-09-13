@@ -1,13 +1,105 @@
 // components/EducationAndStakes.tsx
 import { FaLayerGroup } from "react-icons/fa";
 import { MdOutlineSchool } from "react-icons/md";
-import { SiFigma, SiFramer, SiNotion, SiAdobefonts } from "react-icons/si";
+import { FaHtml5, FaReact, FaNodeJs } from "react-icons/fa";
+import { SiTailwindcss, SiJavascript, SiNextdotjs, SiMongodb, SiExpress, SiMongoose } from "react-icons/si";
 
 export default function EducationAndStakes() {
   return (
-    <section className="bg-white text-gray-800 py-16 px-6 md:px-20">
+    <section className="bg-white text-gray-800 py-16">
       <div className="max-w-5xl mx-auto space-y-12">
-        {/* Education Section */}
+        {/* Stacks Section */}
+        <div>
+          <div className="flex items-center gap-2 mb-6">
+            <FaLayerGroup className="text-xl text-gray-500" />
+            <h2 className="text-2xl font-bold">Tech Stacks</h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* HTML */}
+            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
+              <FaHtml5 className="text-2xl text-orange-500" />
+              <div>
+                <h4 className="font-semibold">HTML</h4>
+                <p className="text-xs text-gray-500">Frontend</p>
+              </div>
+            </div>
+
+            {/* Tailwind CSS */}
+            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
+              <SiTailwindcss className="text-2xl text-sky-500" />
+              <div>
+                <h4 className="font-semibold">Tailwind CSS</h4>
+                <p className="text-xs text-gray-500">Frontend</p>
+              </div>
+            </div>
+
+            {/* JavaScript */}
+            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
+              <SiJavascript className="text-2xl text-yellow-400" />
+              <div>
+                <h4 className="font-semibold">JavaScript</h4>
+                <p className="text-xs text-gray-500">Frontend</p>
+              </div>
+            </div>
+
+            {/* React */}
+            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
+              <FaReact className="text-2xl text-sky-400" />
+              <div>
+                <h4 className="font-semibold">React</h4>
+                <p className="text-xs text-gray-500">Frontend</p>
+              </div>
+            </div>
+
+            {/* Next.js */}
+            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
+              <SiNextdotjs className="text-2xl text-black" />
+              <div>
+                <h4 className="font-semibold">Next.js</h4>
+                <p className="text-xs text-gray-500">Frontend</p>
+              </div>
+            </div>
+
+            {/* Node.js */}
+            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
+              <FaNodeJs className="text-2xl text-green-600" />
+              <div>
+                <h4 className="font-semibold">Node.js</h4>
+                <p className="text-xs text-gray-500">Backend</p>
+              </div>
+            </div>
+
+            {/* MongoDB */}
+            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
+              <SiMongodb className="text-2xl text-green-500" />
+              <div>
+                <h4 className="font-semibold">MongoDB</h4>
+                <p className="text-xs text-gray-500">Database</p>
+              </div>
+            </div>
+
+            {/* Express */}
+            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
+              <SiExpress className="text-2xl text-gray-600" />
+              <div>
+                <h4 className="font-semibold">Express</h4>
+                <p className="text-xs text-gray-500">Backend</p>
+              </div>
+            </div>
+
+            {/* Mongoose */}
+            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
+              <SiMongoose className="text-2xl text-purple-600" />
+              <div>
+                <h4 className="font-semibold">Mongoose</h4>
+                <p className="text-xs text-gray-500">ODM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Education Section (unchanged) */}
         <div>
           <div className="flex items-center gap-2 mb-6">
             <MdOutlineSchool className="text-xl text-gray-500" />
@@ -21,16 +113,19 @@ export default function EducationAndStakes() {
                 2018 - 2019
               </span>
             </div>
-            <h3 className="text-lg font-semibold">UI/UX Design Certification</h3>
+            <h3 className="text-lg font-semibold">Bachelor of Computer Applications (BCA)</h3>
             <p className="text-sm text-gray-500 mb-3">
-              Interaction Design Foundation, Online
+              Maharaja College, University of Rajasthan
             </p>
             <hr className="border-gray-200 mb-3" />
-            <p className="text-sm text-gray-700">
-              Gained hands-on experience in UX research, prototyping,
-              wireframing, and usability testing, focusing on designing
-              seamless, user-friendly digital experiences.
-            </p>
+           <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+  <li>Studied programming languages: C, C++, Java, Python</li>
+  <li>Learned web & app development: HTML, CSS, JavaScript, React, Node.js, Express</li>
+  <li>Worked with databases: MySQL, MongoDB</li>
+  <li>Built projects: Attendance system, Portfolio website, E-commerce prototype</li>
+  <li>Improved problem-solving with DSA and coding challenges</li>
+  <li>Developed teamwork and presentation skills</li>
+</ul>
           </div>
 
           {/* Card 2 */}
@@ -52,70 +147,6 @@ export default function EducationAndStakes() {
               user-centered digital products, integrating aesthetics and
               functionality through practical interaction design principles.
             </p>
-          </div>
-        </div>
-
-        {/* Stakes Section */}
-        <div>
-          <div className="flex items-center gap-2 mb-6">
-            <FaLayerGroup className="text-xl text-gray-500" />
-            <h2 className="text-2xl font-bold">Stakes</h2>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {/* Figma */}
-            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
-              <SiFigma className="text-2xl text-pink-500" />
-              <div>
-                <h4 className="font-semibold">Figma</h4>
-                <p className="text-xs text-gray-500">Design Tool</p>
-              </div>
-            </div>
-
-            {/* Framer */}
-            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
-              <SiFramer className="text-2xl text-purple-600" />
-              <div>
-                <h4 className="font-semibold">Framer</h4>
-                <p className="text-xs text-gray-500">No Code Development</p>
-              </div>
-            </div>
-
-            {/* Lemon Squeezy */}
-            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
-              <div className="w-6 h-6 rounded bg-purple-500" />
-              <div>
-                <h4 className="font-semibold">Lemon Squeezy</h4>
-                <p className="text-xs text-gray-500">Payment</p>
-              </div>
-            </div>
-
-            {/* Notion */}
-            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
-              <SiNotion className="text-2xl text-black" />
-              <div>
-                <h4 className="font-semibold">Notion</h4>
-                <p className="text-xs text-gray-500">Notion</p>
-              </div>
-            </div>
-
-            {/* Illustrators */}
-            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
-              <SiAdobefonts className="text-2xl text-orange-500" />
-              <div>
-                <h4 className="font-semibold">Illustrators</h4>
-                <p className="text-xs text-gray-500">Illustrators</p>
-              </div>
-            </div>
-
-            {/* SS Icons */}
-            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
-              <div className="w-6 h-6 rounded bg-blue-500" />
-              <div>
-                <h4 className="font-semibold">SS Icons</h4>
-                <p className="text-xs text-gray-500">Icon Library</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

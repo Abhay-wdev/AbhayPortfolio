@@ -25,7 +25,7 @@ export default function ProjectsSection() {
   };
 
   return (
-    <section className="bg-white text-gray-900 px-6 py-12">
+    <section className="bg-white text-gray-900  py-12">
       {/* Heading */}
       <div className="max-w-6xl mx-auto mb-8">
         <h2 className="flex items-center gap-2 text-xl font-bold">
@@ -34,7 +34,7 @@ export default function ProjectsSection() {
       </div>
 
       {/* Grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="max-w-6xl   grid grid-cols-1 sm:grid-cols-2 gap-6">
         {projects.slice(0, visibleCount).map((project, index) => (
           <div
             key={index}

@@ -9,7 +9,7 @@ import {
   Linkedin, 
   Instagram 
 } from "lucide-react"
-
+import Link from "next/link"
 export default function TopNavbar() {
   const handleBack = () => {
     window.history.back()
@@ -23,10 +23,10 @@ export default function TopNavbar() {
     <nav className="hidden md:flex bg-white   text-gray-900 px-6 py-3 items-center justify-between border-b border-gray-200 shadow-sm">
       {/* Left Section */}
       <div className="flex-2 flex items-center gap-2 bg-green-100 px-4 py-2 rounded-md hover:bg-green-200 transition cursor-pointer">
-        <MessageCircle className="h-5 w-5 text-green-700" />
+        {/* <MessageCircle className="h-5 w-5 text-green-700" />
         <span className="text-sm font-medium truncate max-w-[400px]">
-          FOX NEWS ANCHOR BRET BAIER adcfhgfnghnghmnghmgh...
-        </span>
+           
+        </span> */}
       </div>
 
       {/* Middle Section - Arrow buttons */}
@@ -75,11 +75,13 @@ export default function TopNavbar() {
             <Instagram className="h-4 w-4" />
           </button>
         </div>
+        <Link href={'/contact-me'}>
         <button 
           className="bg-green-600 hover:bg-green-700 text-white text-sm px-4 py-2 rounded-md transition"
         >
           Contact Me
         </button>
+        </Link>
       </div>
     </nav>
   )
