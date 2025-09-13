@@ -5,43 +5,14 @@ import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
 const projects = [
-  {
-    title: "HelloBot",
-    category: "SaaS & Startup",
-    pages: "8 Pages",
-    image: "https://via.placeholder.com/400x300?text=HelloBot",
-  },
-  {
-    title: "Flexisoft",
-    category: "SaaS & Startup",
-    pages: "6 Pages",
-    image: "https://via.placeholder.com/400x300?text=Flexisoft",
-  },
-  {
-    title: "Excludia",
-    category: "Digital Agency",
-    pages: "8 Pages",
-    image: "https://via.placeholder.com/400x300?text=Excludia",
-  },
-  {
-    title: "CryptoraHub",
-    category: "Crypto & Web3",
-    pages: "7 Pages",
-    image: "https://via.placeholder.com/400x300?text=CryptoraHub",
-  },
-  {
-    title: "TaskFlow",
-    category: "Productivity",
-    pages: "5 Pages",
-    image: "https://via.placeholder.com/400x300?text=TaskFlow",
-  },
-  {
-    title: "EduNext",
-    category: "Education",
-    pages: "9 Pages",
-    image: "https://via.placeholder.com/400x300?text=EduNext",
-  },
+  { title: "HelloBot", category: "SaaS & Startup", pages: "8 Pages"  },
+  { title: "Flexisoft", category: "SaaS & Startup", pages: "6 Pages"   },
+  { title: "Excludia", category: "Digital Agency", pages: "8 Pages"  },
+  { title: "CryptoraHub", category: "Crypto & Web3", pages: "7 Pages" },
+  { title: "TaskFlow", category: "Productivity", pages: "5 Pages" },
+  { title: "EduNext", category: "Education", pages: "9 Pages"  },
 ];
+
 
 
 export default function ProjectsSection() {

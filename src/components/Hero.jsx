@@ -71,7 +71,7 @@ export default function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <Image
-            src="/abhay-webdevloper-image.webp"
+            src="/images/abhay-webdevloper-image.webp"
             alt="Hero Image"
             width={500}
             height={600}

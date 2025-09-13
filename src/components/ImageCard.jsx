@@ -9,7 +9,7 @@ export default function ProfileCard() {
       {/* Profile Image */}
       <div className="relative w-full h-80 rounded-2xl overflow-hidden shadow-md">
         <Image
-          src="/abhay-webdevloper-image.webp"
+          src="/images/abhay-webdevloper-image.webp"
           alt="Abhay Web Developer"
           fill
           className="object-cover"
