@@ -2,8 +2,7 @@
 import AboutSection from "@/components/AboutSection";
 import Blogs from "@/components/Blogs";
 import Hero from "@/components/Hero";
-import ImageCard from "@/components/ImageCard";
-import ProjectCarousel from "@/components/ProjectCarousel";
+ 
 import Footer from "@/components/Footer";
   
 import Contact from "@/components/Contact";
