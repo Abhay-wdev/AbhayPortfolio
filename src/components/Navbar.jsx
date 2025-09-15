@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import TopNavbar from "./TopNavbar";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,11 +14,11 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const links = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Service", href: "/service" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "Pages", href: "/pages" },
+   { name: "Home", href: "/" },
+    { name: "Projects", href: "/projects" },
+   
+    { name: "Resume", href: "/resume" },
+     { name: "Contact", href: "/contact-me" },
   ];
 
   useEffect(() => {
@@ -66,9 +67,10 @@ export default function Navbar() {
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">
-                G
+                A
               </div>
-              <span className="text-xl font-bold text-gray-800">GLINT</span>
+              <span className="text-xl font-bold text-gray-800">Abhay</span>
+      
             </div>
 
             {/* Desktop Menu */}
@@ -101,24 +103,29 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Dropdown */}
-        {isOpen && (
-          <div className="md:hidden bg-white shadow-md px-6 py-4 space-y-4 transition-all duration-500 ease-in-out">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`block uppercase font-medium transition-colors ${
-                  pathname === link.href
-                    ? "text-green-600 border-l-4 border-green-600 pl-2"
-                    : "text-gray-700 hover:text-green-600"
-                }`}
-                onClick={() => setIsOpen(false)}
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
-        )}
+      {isOpen && (
+  <div
+    className="md:hidden bg-white shadow-lg rounded-xl mx-4 mt-2 px-6 py-5 space-y-4 
+               transition-all duration-500 ease-in-out animate-slideDown"
+  >
+    {links.map((link) => (
+      <Link
+        key={link.href}
+        href={link.href}
+        onClick={() => setIsOpen(false)}
+        className={`block uppercase font-medium tracking-wide rounded-lg px-3 py-2 
+                    transition-colors duration-300 ${
+          pathname === link.href
+            ? "text-green-600 bg-green-50 border-l-4 border-green-600"
+            : "text-gray-700 hover:text-green-600 hover:bg-gray-100"
+        }`}
+      >
+        {link.name}
+      </Link>
+    ))}
+  </div>
+)}
+
       </div>
     </nav>
   );

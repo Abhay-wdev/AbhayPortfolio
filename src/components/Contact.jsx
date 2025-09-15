@@ -14,25 +14,23 @@ export default function ContactSection() {
 
           <div className="flex items-center mt-6 space-x-3">
             <FaPhoneAlt className="text-green-600 text-2xl" />
-            <span className="text-xl font-semibold">+4733378901</span>
+            <span className="text-xl font-semibold">+91 9549132776</span>
           </div>
 
           <div className="mt-6">
             <h3 className="text-lg font-semibold">Location</h3>
             <p className="text-gray-600 text-sm">
-              55 Main Street, The Grand Avenue <br />
-              2nd Block, New York City
+               Sanganer, Pratap Nagar <br />
+              Jaipur, Rajasthan 302033
             </p>
           </div>
 
           <div className="mt-6">
             <h3 className="text-lg font-semibold">Official Email</h3>
-            <p className="text-gray-600 text-sm">info@digital.com</p>
+            <p className="text-gray-600 text-sm">abhaychorsiya.dev@gmail.com</p>
           </div>
 
-          <p className="mt-10 text-xs text-gray-500">
-            © 2025 Ventix. All Rights Reserved
-          </p>
+          
         </div>
 
         {/* Right Side - Contact Form */}

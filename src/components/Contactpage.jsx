@@ -30,21 +30,21 @@ export default function ContactPage() {
 
           <div className="space-y-4">
             <a
-              href="tel:+919876543210"
+              href="tel:+919549132776"
               className="flex items-center gap-3 text-gray-700 hover:text-purple-600 transition"
             >
-              <FaPhoneAlt className="text-purple-600 text-lg" /> +91 98765 43210
+              <FaPhoneAlt className="text-purple-600 text-lg" /> +91 9549132776
             </a>
 
             <a
               href="mailto:youremail@example.com"
               className="flex items-center gap-3 text-gray-700 hover:text-purple-600 transition"
             >
-              <FaEnvelope className="text-pink-500 text-lg" /> youremail@example.com
+              <FaEnvelope className="text-pink-500 text-lg" />  abhaychorsiya.dev@gmail.com
             </a>
 
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/9549132776"
               target="_blank"
               className="flex items-center gap-3 text-gray-700 hover:text-green-600 transition"
             >

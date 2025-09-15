@@ -108,9 +108,9 @@ export default function EducationAndStakes() {
 
           {/* Card 1 */}
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 mb-4 relative shadow-sm">
-            <div className="absolute top-4 right-4">
+            <div className="absolute sm:top-4 top-0  right-4">
               <span className="bg-gray-200 text-sm px-3 py-1 rounded-lg">
-                2018 - 2019
+                Aug 2021 - May 2024
               </span>
             </div>
             <h3 className="text-lg font-semibold">Bachelor of Computer Applications (BCA)</h3>
@@ -118,34 +118,34 @@ export default function EducationAndStakes() {
               Maharaja College, University of Rajasthan
             </p>
             <hr className="border-gray-200 mb-3" />
-           <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-  <li>Studied programming languages: C, C++, Java, Python</li>
+           <ul className="list-disc  text-sm text-gray-700 space-y-1">
+   
   <li>Learned web & app development: HTML, CSS, JavaScript, React, Node.js, Express</li>
   <li>Worked with databases: MySQL, MongoDB</li>
   <li>Built projects: Attendance system, Portfolio website, E-commerce prototype</li>
   <li>Improved problem-solving with DSA and coding challenges</li>
   <li>Developed teamwork and presentation skills</li>
 </ul>
+ 
           </div>
 
           {/* Card 2 */}
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 relative shadow-sm">
-            <div className="absolute top-4 right-4">
+            <div className="absolute sm:top-4 top-0 right-4">
               <span className="bg-gray-200 text-sm px-3 py-1 rounded-lg">
-                2015 - 2017
+                Apr 2025 – May 2025
               </span>
             </div>
             <h3 className="text-lg font-semibold">
-              Bachelor of Design in Interaction Design
+              Trainee-Full-Stack Developer
             </h3>
             <p className="text-sm text-gray-500 mb-3">
-              National University of Singapore, Singapore
+             AU Ignite, Gopalpura  
             </p>
             <hr className="border-gray-200 mb-3" />
             <p className="text-sm text-gray-700">
-              Completed a comprehensive program focused on designing
-              user-centered digital products, integrating aesthetics and
-              functionality through practical interaction design principles.
+             As Interns gain hands-on experience in coding, testing, and debugging, thereby contributing to the
+overall success of web development projects.
             </p>
           </div>
         </div>

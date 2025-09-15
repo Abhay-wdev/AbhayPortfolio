@@ -6,11 +6,12 @@ import { FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { CgMail } from "react-icons/cg";
 import { FaGithub } from "react-icons/fa6";
+import Link from "next/link";
 export default function ProfileCard() {
   return (
     <div className="max-w-sm mx-auto bg-gray-500 text-gray-900 rounded-3xl shadow-lg overflow-hidden p-6 flex flex-col items-center">
       {/* Profile Image */}
-      <div className="relative w-full h-80 rounded-2xl overflow-hidden shadow-md">
+      <div className="relative w-full h-90 rounded-2xl overflow-hidden shadow-md">
         <Image
           src="/images/abhay-webdevloper-img.png"
           alt="Abhay Web Developer"
@@ -67,15 +68,19 @@ export default function ProfileCard() {
       </div>
 
       {/* Action Buttons */}
-      <div className="mt-6 flex w-full gap-3">
+      <div className="mt-6 flex justify-center w-full gap-3">
+        <Link href={'https://drive.google.com/file/d/1CZPMKD-nFdJffoKsB_fJITE2D2PceNXg/view?usp=sharing'} target="_blank">
         <button className="flex-1 flex items-center justify-center gap-1 py-2 px-2 rounded-xl bg-gray-100 border border-gray-300 text-gray-700 hover:bg-gray-200 transition">
           <Download className="h-4 w-4" />
           <span className="text-sm">Download CV</span>
         </button>
+        </Link>
+        <Link href={'/contact-me'}   >
         <button className="flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-xl bg-green-500 text-white hover:bg-green-600 transition">
           <Send className="h-4 w-4" />
           <span className="text-sm font-medium">Contact Me</span>
         </button>
+        </Link>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import IconStrip from "./IconStrip";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 // Parent animation for stagger
 const leftContentVariants = {
@@ -53,14 +54,15 @@ export default function Hero() {
             Together we the people achieve more than any single person could
             ever do alone.
           </motion.p>
-
+ <Link href={'https://drive.google.com/file/d/1CZPMKD-nFdJffoKsB_fJITE2D2PceNXg/view?usp=sharing'} target="_blank">
           <motion.button
             variants={childVariants}
             className="mx-auto lg:mx-0 flex items-center gap-3 bg-green-600 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-green-700 transition-all duration-300"
           >
-            Resume
+           Get Resume
             <ArrowRight className="w-5 h-5" />
           </motion.button>
+          </Link>
         </motion.div>
 
         {/* Right Image with slide-up animation */}

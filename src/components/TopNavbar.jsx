@@ -7,8 +7,12 @@ import {
   Facebook, 
   Twitter, 
   Linkedin, 
-  Instagram 
+  Instagram,
+   
 } from "lucide-react"
+import { MdOutlineMail } from "react-icons/md";
+import { FaGithub } from "react-icons/fa6";
+import { ImWhatsapp } from "react-icons/im";
 import Link from "next/link"
 export default function TopNavbar() {
   const handleBack = () => {
@@ -50,30 +54,46 @@ export default function TopNavbar() {
       {/* Right Section - Social icons + Contact */}
       <div className="flex  flex-2 items-center justify-end gap-3">
         <div className="flex items-center gap-2">
+         
+          <Link  href="https://wa.me/919549132776" // replace with your full number (country code + number, no '+' or spaces)
+        target="_blank"
+        rel="noopener noreferrer" >
+          <button 
+            className="text-gray-600 hover:text-green-500 hover:bg-gray-100 rounded-md h-9 w-9 flex items-center justify-center transition"
+            title="Twitter"
+          >
+            <ImWhatsapp className="h-4 w-4" />
+          </button>
+          </Link>
+            <Link
+        href="https://github.com/Abhay-wdev" // replace with your GitHub URL
+        target="_blank"
+        rel="noopener noreferrer"
+         
+      >
           <button 
             className="text-gray-600 hover:text-blue-600 hover:bg-gray-100 rounded-md h-9 w-9 flex items-center justify-center transition"
             title="Facebook"
           >
-            <Facebook className="h-4 w-4" />
+            <FaGithub className="h-4 w-4" />
           </button>
-          <button 
-            className="text-gray-600 hover:text-sky-500 hover:bg-gray-100 rounded-md h-9 w-9 flex items-center justify-center transition"
-            title="Twitter"
-          >
-            <Twitter className="h-4 w-4" />
-          </button>
+          </Link>
+          <Link href='www.linkedin.com/in/abhay-wdev' target="_blank">
           <button 
             className="text-gray-600 hover:text-blue-700 hover:bg-gray-100 rounded-md h-9 w-9 flex items-center justify-center transition"
             title="LinkedIn"
           >
             <Linkedin className="h-4 w-4" />
           </button>
+          </Link>
+          <Link  href="mailto:yourname@example.com" target="_blank" >
           <button 
             className="text-gray-600 hover:text-pink-500 hover:bg-gray-100 rounded-md h-9 w-9 flex items-center justify-center transition"
-            title="Instagram"
+            title="Email"
           >
-            <Instagram className="h-4 w-4" />
+            <MdOutlineMail  className="h-4 w-4" />
           </button>
+          </Link>
         </div>
         <Link href={'/contact-me'}>
         <button 

@@ -2,52 +2,60 @@
 
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
+import { usePathname } from "next/navigation"; // ✅ Correct import for App Router
 import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
-  { title: "HelloBot", category: "SaaS & Startup", pages: "8 Pages"  },
-  { title: "Flexisoft", category: "SaaS & Startup", pages: "6 Pages"   },
-  { title: "Excludia", category: "Digital Agency", pages: "8 Pages"  },
-  { title: "CryptoraHub", category: "Crypto & Web3", pages: "7 Pages" },
-  { title: "TaskFlow", category: "Productivity", pages: "5 Pages" },
-  { title: "EduNext", category: "Education", pages: "9 Pages"  },
+  { title: "Dermatologist", category: "Medical", pages: "37 Pages",img:"/images/drankit.png", weburl:"https://drankit0-0-1.vercel.app" },
+  { title: "Hotel industry", category: "hospitality and tourism sector", pages: "7 Pages",img:"/images/hotel.png", weburl:"https://blink-inn-hotal.vercel.app" },
+  { title: "Orthopedic", category: "Medical", pages: "16 Pages",img:"/images/dr-jagdish.png", weburl:"https://drjagdishsinghcharan.vercel.app/" },
+  { title: "Website", category: "Seocial Media & Web devlopment", pages: "48 Pages",img:"/images/seocial.png", weburl:"https://seocial-media-solutions-mu.vercel.app" },
+  { title: "Task Managment", category: "Productivity", pages: "1",img:"/images/coming-soon.jpg", weburl:"#" },
+   
 ];
 
-
-
 export default function ProjectsSection() {
-  // State to control how many projects are shown
   const [visibleCount, setVisibleCount] = useState(4);
 
   // Handle load more
   const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + 2); // show 2 more each click
+    setVisibleCount((prev) => prev + 2);
   };
 
+  // ✅ Get current URL path
+  const pathname = usePathname();
+  
+
   return (
-    <section className="bg-white text-gray-900  py-12">
+    <section className="bg-white text-gray-900">
       {/* Heading */}
-      <div className="max-w-6xl mx-auto mb-8">
+      <div className="max-w-6xl mx-auto my-8">
         <h2 className="flex items-center gap-2 text-xl font-bold">
-          🚀 Projects
+         {pathname === '/projects' 
+  ? null 
+  : '• Projects'}
+
         </h2>
       </div>
 
       {/* Grid */}
-      <div className="max-w-6xl   grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="max-w-6xl  min-w-[260px]  sm:min-w-4xl grid grid-cols-1 sm:grid-cols-2 gap-6">
         {projects.slice(0, visibleCount).map((project, index) => (
           <div
             key={index}
             className="bg-gray-50 border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition"
           >
-            {/* Image */}
-            <div className="relative w-full h-52 sm:h-60">
-              {/* <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover"
-              /> */}
+            {/* Image Placeholder */}
+            <div className="relative w-full h-52 sm:h-60 bg-gray-200">
+              <Link href={project.weburl} target="_blank">
+              <Image
+    src={project.img}
+    alt={project.title || "Project image"}
+    fill // ✅ Makes the image cover the container
+    className="object-cover hover:scale-110 transition-transform ease-in-out duration-300 cursor-pointer" // ✅ Correct Tailwind class
+  />
+  </Link>
             </div>
 
             {/* Content */}
@@ -58,13 +66,15 @@ export default function ProjectsSection() {
                   {project.category} • {project.pages}
                 </p>
               </div>
-              <ArrowUpRight className="h-5 w-5 text-gray-500 hover:text-gray-800 transition cursor-pointer" />
+              <Link href={project.weburl} target="_blank">
+              <ArrowUpRight className="h-10 hover:bg-green-300 w-10 rounded-full border text-gray-500 hover:text-gray-800 transition cursor-pointer" />
+              </Link>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Load More */}
+      {/* Load More Button */}
       {visibleCount < projects.length && (
         <div className="max-w-6xl mx-auto flex justify-center mt-8">
           <button

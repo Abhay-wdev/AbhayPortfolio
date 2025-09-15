@@ -7,7 +7,7 @@ import EducationAndStakes from "./EducationAndStakes";
 
 export default function AboutSection() {
   return (
-    <div className="flex flex-col   justify-center lg:flex-row gap-6 px-6 py-12">
+    <div className="flex flex-col  justify-center lg:flex-row gap-6 px-6 py-12">
       {/* Left Column - Sticky Image */}
        
       <div className="    w-full lg:w-80 h-fit lg:sticky top-24 self-start">
@@ -24,7 +24,7 @@ export default function AboutSection() {
             <span className="text-green-600">Full-stack Developer</span> <br />
             Based in Jaipur, Raj.
           </h1>
-          <p className="mt-4 text-gray-600 leading-relaxed">
+          <p className="mt-4 text-justify text-gray-600 leading-relaxed">
            I’m a specializing in building clean, user-friendly digital experiences. By blending creativity with functionality, I craft solutions that not only look great but also work seamlessly. With expertise in frontend design (React, Next.js, Tailwind CSS) and backend development (Node.js, Express, MongoDB), I focus on creating smooth, interactive, and scalable applications that bring ideas to life from concept to deployment.
           </p>
         </div>

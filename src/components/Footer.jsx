@@ -12,10 +12,11 @@ import {
 
 export default function Footer() {
   const navLinks = [
-    { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
-    { name: "Services", href: "#services" },
+    { name: "Home", href: "/" },
+    { name: "Projects", href: "/projects" },
+   
+    { name: "Resume", href: "/resume" },
+     { name: "Contact", href: "/contact-me" },
   ];
 
   const socialLinks = [
