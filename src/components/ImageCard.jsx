@@ -50,7 +50,7 @@ export default function ProfileCard() {
           <FaWhatsapp className="h-5 w-5 text-gray-700" />
         </a>
         <a
-          href="www.linkedin.com/in/abhay-wdev"
+          href="https://www.linkedin.com/in/abhay-wdev/"
           target="_blank"
           className="p-2 rounded-lg bg-gray-100 border border-gray-200 hover:bg-gray-200 transition"
           title="LinkedIn"

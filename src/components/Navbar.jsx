@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import TopNavbar from "./TopNavbar";
+ 
 import Image from "next/image";
 
 export default function Navbar() {
@@ -53,7 +53,7 @@ export default function Navbar() {
           showTop ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <TopNavbar />
+        
       </div>
 
       {/* Main Navbar */}

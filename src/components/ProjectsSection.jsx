@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const projects = [
+  { title: "Deshimarble", category: "Decor", pages: "10+ Pages",img:"/images/desimarble.png", weburl:"https://deshimarble.com" },
   { title: "Dermatologist", category: "Medical", pages: "37 Pages",img:"/images/drankit.png", weburl:"https://drankit0-0-1.vercel.app" },
   { title: "Hotel industry", category: "hospitality and tourism sector", pages: "7 Pages",img:"/images/hotel.png", weburl:"https://blink-inn-hotal.vercel.app" },
   { title: "Orthopedic", category: "Medical", pages: "16 Pages",img:"/images/dr-jagdish.png", weburl:"https://drjagdishsinghcharan.vercel.app/" },
