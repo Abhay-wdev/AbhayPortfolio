@@ -2,6 +2,8 @@
 import { FaLayerGroup } from "react-icons/fa";
 import { MdOutlineSchool } from "react-icons/md";
 import { FaHtml5, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaWordpressSimple } from "react-icons/fa6";
+
 import { SiTailwindcss, SiJavascript, SiNextdotjs, SiMongodb, SiExpress, SiMongoose } from "react-icons/si";
 
 export default function EducationAndStakes() {
@@ -16,6 +18,14 @@ export default function EducationAndStakes() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
+              <FaWordpressSimple className="text-2xl text-black" />
+              <div>
+                <h4 className="font-semibold">Wordpress</h4>
+                <p className="text-xs text-gray-500">Frontend+Backend</p>
+              </div>
+            </div>
+
             {/* HTML */}
             <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm">
               <FaHtml5 className="text-2xl text-orange-500" />

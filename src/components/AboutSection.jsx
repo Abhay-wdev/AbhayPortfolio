@@ -25,8 +25,9 @@ export default function AboutSection() {
             Based in Jaipur, Raj.
           </h1>
           <p className="mt-4 text-justify text-gray-600 leading-relaxed">
-           I’m a specializing in building clean, user-friendly digital experiences. By blending creativity with functionality, I craft solutions that not only look great but also work seamlessly. With expertise in frontend design (React, Next.js, Tailwind CSS) and backend development (Node.js, Express, MongoDB), I focus on creating smooth, interactive, and scalable applications that bring ideas to life from concept to deployment.
-          </p>
+  I’m a developer specializing in building clean, user-friendly digital experiences across WordPress and modern web technologies. By blending creativity with functionality, I craft solutions that not only look great but also work seamlessly. With strong expertise in WordPress development (custom themes, plugins, and optimization) along with frontend technologies (React, Next.js, Tailwind CSS) and backend development (Node.js, Express, MongoDB), I focus on creating smooth, interactive, and scalable applications that bring ideas to life from concept to deployment.
+</p>
+
         </div>
 
         
@@ -39,7 +40,28 @@ export default function AboutSection() {
           </h2>
 
           <div className="space-y-4">
-            {/* Job 1 */}
+                {/* Job 3 */}
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 flex flex-col sm:flex-row justify-between shadow-sm">
+              <div>
+                <h3 className="font-semibold text-gray-900">
+                   Web Devloper
+                </h3>
+                <p className="text-gray-600 text-sm">ViralNexus</p>
+                <ul className="text-gray-600 ml-4 list-disc text-sm mt-2">
+  <li>Built and managed WordPress websites using custom themes, plugins, and REST API integrations</li>
+  <li>Developed full-stack MERN applications using MongoDB, Express.js, React, and Node.js</li>
+  <li>Integrated WordPress with custom React components and headless CMS solutions</li>
+  <li>Optimized website performance, security, and SEO using modern WordPress best practices</li>
+  <li>Collaborated using Git/GitHub, followed clean coding standards, and ensured cross-browser & mobile responsiveness</li>
+</ul>
+
+              </div>
+              <span className="text-sm text-nowrap text-gray-500 mt-3 sm:mt-0 sm:ml-6">
+                Sep 2025 – Dec 2025
+              </span>
+            </div>
+
+            {/* Job 2 */}
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 flex flex-col sm:flex-row justify-between shadow-sm">
               <div>
                 <h3 className="font-semibold text-gray-900">
@@ -57,7 +79,7 @@ export default function AboutSection() {
               </span>
             </div>
 
-            {/* Job 2 */}
+            {/* Job 1 */}
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 flex flex-col sm:flex-row justify-between shadow-sm">
               <div>
                 <h3 className="font-semibold text-gray-900">Trainee-Full-Stack Developer</h3>

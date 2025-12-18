@@ -10,10 +10,12 @@ import {
   FaPython,
 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { FaWordpressSimple } from "react-icons/fa6";
+
 import { SiJavascript, SiMongodb,SiMongoose, SiMysql, SiNextdotjs,SiExpress  } from "react-icons/si";
 
 const frontendIcons = [
-  { id: 1, icon: <FaHtml5 className="text-orange-600 w-10 h-10" />, label: "HTML" },
+  { id: 1, icon: <FaWordpressSimple className="text-black w-10 h-10" />, label: "Wordpress" },
   { id: 2, icon: <RiTailwindCssFill className="text-blue-600 w-10 h-10" />, label: "Tailwind CSS" },
   { id: 3, icon: <SiJavascript className="text-yellow-500 w-10 h-10" />, label: "JavaScript" },
   { id: 4, icon: <FaReact className="text-cyan-500 w-10 h-10" />, label: "React" },

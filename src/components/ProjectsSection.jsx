@@ -7,13 +7,21 @@ import Image from "next/image";
 import Link from "next/link";
 
 const projects = [
-  { title: "Deshimarble", category: "Decor", pages: "10+ Pages",img:"/images/desimarble.png", weburl:"https://deshimarble.com" },
+  
+   { title: "Suswastik", category: "E-commerce(Spices)", pages: "23+ Pages",img:"/images/suswastik.webp", weburl:"https://suswastik-website-portfolio.vercel.app" },
+  { title: "ViralNexus", category: "Social Media & Web Development", pages: "16+ Pages",img:"/images/viralnexus.webp", weburl:"https://ecom-vision.vercel.app" },
+ 
   { title: "Dermatologist", category: "Medical", pages: "37 Pages",img:"/images/drankit.png", weburl:"https://drankit0-0-1.vercel.app" },
   { title: "Hotel industry", category: "hospitality and tourism sector", pages: "7 Pages",img:"/images/hotel.png", weburl:"https://blink-inn-hotal.vercel.app" },
   { title: "Orthopedic", category: "Medical", pages: "16 Pages",img:"/images/dr-jagdish.png", weburl:"https://drjagdishsinghcharan.vercel.app/" },
   { title: "Website", category: "Seocial Media & Web devlopment", pages: "48 Pages",img:"/images/seocial.png", weburl:"https://seocial-media-solutions-mu.vercel.app" },
-  { title: "Task Managment", category: "Productivity", pages: "1",img:"/images/coming-soon.jpg", weburl:"#" },
-   
+
+  
+   { title: "apico.adjectivepr(Wp)", category: "E-commerce", pages: "17+ Pages",img:"/images/apicoadjectivepr.webp", weburl:"https://apico.adjectivepr.com" },
+   { title: "Dsbtecommerce(Wp)", category: "Business Development", pages: "7+ Pages",img:"/images/dsbtecommerce.webp", weburl:"https://dsbtecommerce.com" },
+    { title: "Deshimarble(Wp)", category: "Decor", pages: "10+ Pages",img:"/images/desimarble.png", weburl:"https://deshimarble.com" },
+    { title: "Decezz(Wp)", category: "E-commerce", pages: "16+ Pages",img:"/images/coming-soon.jpg", weburl:"https://decezz.in" },
+     { title: "Task Managment", category: "Productivity", pages: "1",img:"/images/coming-soon.jpg", weburl:"#" },
 ];
 
 export default function ProjectsSection() {
@@ -21,7 +29,7 @@ export default function ProjectsSection() {
 
   // Handle load more
   const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + 2);
+    setVisibleCount((prev) => prev + 4);
   };
 
   // ✅ Get current URL path

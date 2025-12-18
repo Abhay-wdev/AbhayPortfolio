@@ -35,7 +35,7 @@ export default function ProfileCard() {
       {/* Social Icons */}
       <div className="mt-4 flex gap-3">
         <a
-          href="#"
+          href="https://github.com/Abhay-wdev"
           className="p-2 rounded-lg bg-gray-100 border border-gray-200 hover:bg-gray-200 transition"
           title="Github"
         >
